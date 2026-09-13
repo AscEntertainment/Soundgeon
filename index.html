@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio RPG Prototype - DEBUG MODE</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #0f0; /* Classic terminal green for debugging */
+            font-family: monospace;
+            margin: 0;
+            padding: 20px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        
+        #boot-screen {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* Debug UI Layout */
+        #debug-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #debug-stats {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #0f0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        #debug-main {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #grid-display {
+            font-size: 2rem;
+            line-height: 1.5;
+            white-space: pre;
+            letter-spacing: 0.2rem;
+        }
+
+        #debug-legend {
+            border-left: 1px solid #0f0;
+            padding-left: 20px;
+            list-style: none;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="boot-screen">
+        <h1>System Ready</h1>
+        <p>Press the <strong>F</strong> key or click anywhere to begin.</p>
+    </div>
+
+    <script src="dungeon.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
